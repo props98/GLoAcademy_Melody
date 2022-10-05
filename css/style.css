@@ -1,5 +1,67 @@
-body {
+body * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background: tomato;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  background: #635854;
+  padding: 12px 0;
+  border-bottom: 4px solid #3596F5;
+}
+
+.navbar {
+  max-width: 1280px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-menu {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  list-style: none;
+}
+
+.navbar-item {
+  margin: 0 40px;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: #fff;
+}
+
+.navgar-contacts {
+  text-align: right;
+}
+
+.navbar-text {
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+  margin-bottom: 4px;
+}
+
+.navbar-phone {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #fff;
 }/*# sourceMappingURL=style.css.map */
