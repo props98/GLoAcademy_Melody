@@ -1,3 +1,6 @@
+@import 'fonts'
+
+
 *   
     box-sizing: border-box
 
@@ -54,9 +57,34 @@ body
 
 .main 
     padding-top: 54px
+    display: flex
+
+.main-title
+    font-family: 'Bebas Neue', sans-serif
+    text-transform: uppercase
+    color: #635854
+    font-weight: normal
+    font-size: 37px
+    line-height: 44px
 
 .home-svg path 
     opacity: 0
     cursor: pointer
 .home-svg path:hover 
     opacity: .75
+
+.main-info
+    flex-grow: 1
+    text-align: center
+
+.counter-group 
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.counter-button
+    background: #fff
+    border: none
+
+.counter-down
+    transform: rotateX(180deg)
