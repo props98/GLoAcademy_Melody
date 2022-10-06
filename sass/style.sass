@@ -1,8 +1,15 @@
+@import 'fonts'
+
+
 *   
     box-sizing: border-box
 
 body
     font-family: 'Roboto', sans-serif
+
+.container
+    max-width: 1280px
+    margin: 0 auto
     
 .header
     background: #635854
@@ -10,8 +17,6 @@ body
     border-bottom: 4px solid #3596F5
 
 .navbar
-    max-width: 1280px
-    margin: 0 auto
     display: flex
     justify-content: space-between
     align-items: center
@@ -47,3 +52,60 @@ body
     text-decoration: none
     color: #fff
     
+
+// Day 2
+
+.main 
+    padding-top: 54px
+    display: flex
+
+.main-title
+    margin: 0
+    font-family: 'Bebas Neue', sans-serif
+    text-transform: uppercase
+    color: #635854
+    font-weight: normal
+    font-size: 37px
+    line-height: 44px
+
+.home-svg path 
+    opacity: 0
+    cursor: pointer
+.home-svg path:hover 
+    opacity: .75
+
+.main-info
+    padding: 70px 0
+    flex-grow: 1
+    text-align: center
+    display: flex
+    flex-direction: column
+    align-items: center
+    justify-content: space-between
+
+.counter-group 
+    display: flex
+    flex-direction: column
+    align-items: center
+
+.counter-button
+    background: #fff
+    border: none
+    cursor: pointer
+
+.counter-down
+    transform: rotateX(180deg)
+
+.counter
+    font-family: 'Bebas Neue', sans-serif
+    font-size: 124px
+    margin-top: 20px
+    color: #635854
+
+.button-primary
+    background: #3596F5
+    border-radius: 6px
+    color: #fff
+    border: none
+    padding: 16px 36px
+    cursor: pointer
