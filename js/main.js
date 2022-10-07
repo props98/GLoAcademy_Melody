@@ -1,9 +1,9 @@
-$(document).ready(function () {
-    let currentFloor = 2;
-    let counterUp = $('.counter-up');
-    let counterDown = $('.counter-down');
-    let floorPath = $('.home-svg path');
+let currentFloor = 2;
+let counterUp = $('.counter-up');
+let counterDown = $('.counter-down');
+let floorPath = $('.home-svg path');
 
+$(document).ready(function () {
         // Функция при наведении мышью на этаж
     floorPath.on('mouseover', function() {
         floorPath.removeClass('current-floor');
