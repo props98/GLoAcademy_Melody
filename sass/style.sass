@@ -115,3 +115,103 @@ body
 
 path.current-floor
     opacity: 1
+
+
+// Day FINAl
+
+.modal
+    opacity: 0
+    transform: scale(0)
+    transition: opacity 0.5s
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(0, 0, 0, 0.8)
+    display: flex
+    align-items: center
+    justify-content: center
+
+.is-open
+    opacity: 1
+    transform: scale(1)
+
+.modal-dialog
+    position: relative
+    max-width: 1000px
+    min-height: 565px
+    background: #fff
+    flex-grow: 1
+    display: flex
+    opacity: 0
+    transform: translateY(-10%)
+    transition: transform .3s, opacity .2s
+    transition-delay: .3s
+
+.is-open > .modal-dialog
+    opacity: 1
+    transform: translateY(0)  
+
+.modal-close-button
+    position: absolute
+    top: 38px
+    right: 27px
+    background: none
+    border: none
+    cursor: pointer
+
+.modal-image
+    width: 60%
+    padding: 50px
+    text-align: center
+    background: #EBEBEB
+
+.modal-title,
+.floor-counter
+    font-family: 'Bebas Neue', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 24px
+    line-height: 29px
+    margin-top: 0
+    margin-bottom: 25px
+    color: #000
+
+.modal-info
+    width: 40%
+    padding: 50px 46px
+
+.flat-list
+    padding: 0
+    margin-top: 50px
+    margin-bottom: 56px
+    list-style: none
+
+.flat-link
+    padding: 5px 0
+    display: block
+    font-family: 'Roboto', sans-serif
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+    color: #635854
+    text-decoration: none
+.flat-link:hover
+    color: #3596F5
+    text-decoration: underline
+
+.flat-alert
+    margin: 0
+    font-family: 'Roboto', sans-serif
+    font-style: italic
+    font-weight: 400
+    font-size: 16px
+    line-height: 19px
+
+.flats path
+    opacity: 0
+    cursor: pointer
+.flats path:hover
+    opacity: 1
